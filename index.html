@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
+<!--div#idname.classname>div (Shortcut)-->
+
 <head>
-    <title>My Website</title>
+    <title>Pizza Store</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
 </head>
+
 <body>
     <div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--Wow.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>/*global WOW*/
+            new WOW().init();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <!--bootstrap-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--javascript-->
+        
     </div>
     <!--Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -30,6 +45,9 @@
                 <li class=nav-item>
                     <a class="nav-link" href="#team">Meet our Team</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#getinvolved">Get Involved</a>
+                </li>
                 <li class=nav-item>
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
@@ -41,23 +59,18 @@
     </nav>
     <!--Header-->
     <div id="header" class="header">
-        <div class="container">
-            <!--<div class="row">-->
-            <!--    <div class="col-lg-6 col-md-6">-->
-            <!--<h1></h1><br>-->
-            <!--<p>Hello.</p>-->
-            <!--<button class="btn btn-lg btn-primary">Buy Now</button>-->
-            <!--<button class="btn btn-lg btn-success">View Detail</button>-->
-            <!--    </div>-->
-            <div class="slideshow-container">
-                <div class="myimages">
-                    <br><br><br><br><br><br><br>
-
-                    <img src="https://www.cicis.com/media/1149/pizza_trad_cheese.png">
-                </div>
+        <div class="slideshow-container">
+            <div class="myimages">
+                <img src="https://www.cicis.com/media/1149/pizza_trad_cheese.png">
+            </div>
+            <div class="myimages">
+                <img src="https://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png">
+            </div>
+            <div class="myimages">
+                <img src="https://www.cicis.com/media/1145/pizza_adven_maccheese.png">
             </div>
         </div>
-    </div>
+    </div><br><br><br><br><br>
     <!--About us-->
     <div id="about" class="about">
         <div class="container">
@@ -76,14 +89,14 @@
                     <span><strong>Ratings</strong></span>
                     <p>Our company has maintained a 96% approval rating among the past 10 years. We have a major importance on integrity that is demonstrated throughout our employees and our company goals.</p>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <i class="fa fa-calendar fa-spin" aria-hidden="true"></i>
-                    <span><strong>Upcoming Announcements</strong></span>
-                    <p>Starting on December 1st, we will be collecting money for the Salvation Army. For every $1 we make, 10 cents will go to them. This contribution along with volunteer work demonstrates our company's goals.
-                        <br> Starting on March 3rd, we will be hiring interns for the Summer Projects.Submit applications prior to this date! <a href="https://goo.gl/forms/73lv0kmzdlqXh5l82">Apply here.</a></p>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <i class="fa fa-calendar fa-spin" aria-hidden="true"></i>
+                        <span><strong>Upcoming Announcements</strong></span>
+                        <p>Starting on December 1st, we will be collecting money for the Salvation Army. For every $1 we make, 10 cents will go to them. This contribution along with volunteer work demonstrates our company's goals.
+                            <br> Starting on March 3rd, we will be hiring interns for the Summer Projects.Submit applications prior to this date! <a href="https://goo.gl/forms/73lv0kmzdlqXh5l82">Apply here.</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,6 +133,35 @@
                     <h3>Name</h3>
                     <h4>President</h4>
                     <p>Runs stuff.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--get involved-->
+    <div id="getinvolved" class="getinvolved">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 wow flipInY" data-wow-delay=".5s">
+                    <div class="options">
+                        <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                        <h3>Explore</h3>
+                        <p>We were founded in the late 1900s and strive to improve pizza in our nation.</p><br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow flipInY" data-wow-delay="1s">
+                    <div class="options">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        <h3>Volunteer</h3>
+                        <p>Check back here for volunteer options at one of our public fundraisers!</p><br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.5s">
+                    <div class="options">
+                        <i class="fas fa-hand-holding-usd" aria-hidden="true"></i>
+                        <h3>Give</h3>
+                        <p>CLick donate to donate money or contact us at (347)838-0586 to give item donations! Anything in new condition will be reviewed.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,5 +265,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
+
 </html>

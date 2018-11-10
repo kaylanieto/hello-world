@@ -39,7 +39,8 @@ p{
                                                 /*Navigation*/
 .navbar{
     text-transform:uppercase;
-    font-family:'PT Sans Narrow', Arial, sans-serif;
+    /*font-family:'PT Sans Narrow', Arial, sans-serif;*/
+    font-family: 'Poor Story', cursive;
     font-weight:500;
 }
                                                 /*Header*/
@@ -52,6 +53,7 @@ p{
 }
 .header .myimages img{
     display:block;
+    margin-top:200px;
     margin-left:auto;
     margin-right:auto;
     width:50%;
@@ -93,7 +95,7 @@ p{
 .getinvolved{
     padding:50px 0 80px;
     text-align:center;
-    background-color:#5cb85c;
+    background-color:#03337f;
     margin-top:50px;
 }
 .getinvolved h2{
@@ -120,7 +122,7 @@ p{
     height:100px;
     margin-top:5px;
 }
-                                                /*Footer*/
+                                               /*Footer*/
 .footer{
     background-color:#fff;
     margin-top:20px;
